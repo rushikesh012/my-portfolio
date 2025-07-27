@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+body {
+  overflow-x: hidden !important;
+}
+
+#home,
+#skills,
+#projects,
+#experience,
+#achievements,
+#contact {
+  scroll-margin-top: 56px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+
+.badge {
+  font-size: 1rem;
+  padding: 0.5em 0.75em;
+}
+
+section {
+  scroll-margin-top: 80px; /* adjust if you have fixed navbar */
+}
+
+.progress {
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.progress-bar {
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-radius: 0;
+}
+
+.bg-skill {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
