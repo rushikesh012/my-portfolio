@@ -31,21 +31,25 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.toggle('dark-theme');
 
     if (document.body.classList.contains('dark-theme')) {
-      toggle.classList.remove('bi-moon');
-      toggle.classList.add('bi-sun');
+      toggle.classList.remove('fa-moon');
+      toggle.classList.add('fa-sun');
       dotColor = '#ffffff'
       lineColor = '#ffffff'
       animate(dotColor, lineColor);
 
     } else {
-      toggle.classList.remove('bi-sun');
-      toggle.classList.add('bi-moon');
+      toggle.classList.remove('fa-sun');
+      toggle.classList.add('fa-moon');
       dotColor = '#000000'
       lineColor = '#000000'
       animate(dotColor, lineColor);
     }
+
+    // Collapse navbar if open
+    const navbar = document.getElementById('navbarNav');
+    const bsCollapse = new bootstrap.Collapse(navbar, { toggle: false });
+    bsCollapse.hide();
+
+    toggle.blur();
   });
-
-  
-
 });
