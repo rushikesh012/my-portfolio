@@ -1,4 +1,6 @@
-# My Portfolio Website
+## 🚀 Build Status
+[![CI - Test and Lint Django app](https://github.com/rushikesh012/my-portfolio/actions/workflows/test.yml/badge.svg)](https://github.com/rushikesh012/my-portfolio/actions/workflows/test.yml)
+# My Portfolio Website 
 
 Single-page portfolio built with Django, HTML, CSS, and JavaScript.
 
