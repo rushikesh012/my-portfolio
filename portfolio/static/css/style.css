@@ -76,24 +76,14 @@ section {
   border: none;
 }
 
-.navbar-to
-/* Right-align nav items in mobile collapsed menu */
-
-.navbar-collapse .navbar-nav {
-  align-items: flex-end;        /* right-align items */
-}
 /* Apply background only on mobile */
 @media (max-width: 991.98px) {
-  .navbar-collapse {
-    color: var(--bcg-color);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    height: 100%;
+  .navbar-nav {
+    align-items: flex-end !important;
   }
-
-  .dark-theme .navbar-collapse {
-    color: var(--txt-color);
-    height: 100%;
+  /* Optional: also align text to right */
+  .navbar-nav .nav-link {
+    text-align: right;
   }
 }
 
@@ -205,3 +195,4 @@ section {
 .nav.link {
   padding: 10px 20px 10px 20px !important;    /*  top-right-bottom-left  */
 }
+
