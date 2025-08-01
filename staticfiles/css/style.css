@@ -1,0 +1,198 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* Light theme colors */
+:root {
+  --bg-gradien: linear-gradient(135deg, #AD80E8, #FBCC94, #12FCF3);
+  --bcg-color: #00CFFF;  
+  --txt-color: black;   /*black*/
+  --theme-color: white;
+  --collapse-bg: #f7f3fc; 
+  --collapse-text: #212529; 
+  --hover-glow-color: #00CFFF; 
+  --icon-color: #212529;
+}
+
+/* Dark theme colors */
+body.dark-theme {
+  --bg-gradien: linear-gradient(135deg, #0A1023, #0D0321, #692838, #081423, #241B37);
+  --bcg-color: #12FCF3;
+  --txt-color: white;   /*white*/
+  --theme-color: black;
+  --collapse-bg: #1e1b2b;
+  --collapse-text: #f8f9fa;
+  --hover-glow-color: rgba(18, 252, 243, 0.6);
+  --icon-color: #f8f9fa;
+}
+
+body {
+  color: var(--txt-color) !important; /* website txt color */
+}
+
+/* Background parcticles effect  */
+#particles-js {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;                        /* stay behind everything */
+  background: var(--bg-gradien);
+  background-size: 400% 400%;
+  animation: gradientMove 20s ease infinite;     /* fallback if particles fail */
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h2 {
+  font-weight: 600;
+}
+
+section {
+  scroll-margin-top: 50px;      /* adjust if you have fixed navbar */
+}
+
+.skill-card {
+  border-radius: 1rem;
+}
+
+.progress {
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--txt-color);
+}
+
+.progress-bar {
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-radius: 0;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+/* Apply background only on mobile */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    align-items: flex-end !important;
+  }
+  /* Optional: also align text to right */
+  .navbar-nav .nav-link {
+    text-align: right;
+  }
+}
+
+ /* only for desktop mode  */
+.nav-toggle-badge {
+  display: inline-flex;             /* center icon */
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;                    /* fixed width/height makes it circular */
+  height: 2.2rem;
+  border-radius: 50%;               /* circle */
+  background-color: var(--bcg-color);
+  color: var(--txt-color);
+  font-size: 1.1rem;                /* adjust icon size */
+  margin-left: 0.4rem;   /* optional: space from previous item */
+
+}
+
+.nav-toggle-badge:hover, .nav-toggle-badge:focus {
+  background-color: transparent;
+  color: var(--bcg-color);
+}
+
+.social-icons i,
+#projGit {
+  color: var(--icon-color);
+} */color
+
+/* Optional: add hover effect */
+.social-icons i:hover, .social-icons i:focus,
+#projGit:hover, #projGit:focus {
+  color: var(--icon-color);  /* or any accent color on hover */
+}
+
+.dark-theme .card-title,
+.dark-theme .card-subtitle,
+.dark-theme .card-text {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+
+/* General class for hover-glow effect  */
+
+.hover-glow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+.hover-glow:hover,
+.hover-glow:focus-visible {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 12px var(--hover-glow-color), 0 0 24px var(--hover-glow-color);
+  
+}
+/* ////////////hove-glow end/////////////// */
+
+/* BADGE */
+.badge {
+  font-size: 1rem;
+  border-radius: 50px;
+  background-color: var(--bcg-color);
+  color: var(--txt-color);
+   padding: 7px 25px 7px 25px !important; 
+}
+
+.badge:hover,
+.badge:focus {
+  background-color: transparent;
+  color: var(--bcg-color);
+}
+
+/* Base button style */
+.btn {
+  background-color: var(--bcg-color) !important;
+  color: var(--txt-color) !important;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect (applies to all sizes) */
+.btn:hover, .btn:focus {
+  background-color: transparent !important;
+  color: var(--bcg-color) !important;  /* text becomes theme primary */
+}
+
+/* i:hover, .bi:hover, .fa:hover, .fa-brands:hover {
+  color: var(--hover-glow-color);
+} */
+
+
+/* mobile mode  */
+.navbar-toggler {
+  color: var(--txt-color);
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+  background-color: transparent;
+  color: var(--bcg-color);
+}
+
+/* navbar items  */
+.nav-item {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+/* navbar links  */
+.nav.link {
+  padding: 10px 20px 10px 20px !important;    /*  top-right-bottom-left  */
+}
+
