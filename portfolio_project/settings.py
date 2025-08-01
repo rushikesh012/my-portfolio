@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dummy-secret-key-for-ci-only')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["rushikeshhodade.pythonanywhere.com"]
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
