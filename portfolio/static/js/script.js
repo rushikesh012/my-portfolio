@@ -27,6 +27,35 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentTheme = 'light'
   animate(dotColor, lineColor)
 
+  // Typing for name
+  new Typed('#typed-name', {
+    strings: ["Hello, I'm Rushikesh"],            // text to type
+    typeSpeed: 50,
+    backSpeed: 25,
+    showCursor: false,
+  });
+
+  // Fixed for description
+  new Typed('#fixed-desc', {
+    strings: ["And I'm a "],
+    startDelay: 1000, // starts after name
+    typeSpeed: 50,
+    backSpeed: 25,
+    showCursor: false,
+  })
+
+  // Typing for description
+  new Typed('#typed-desc', {
+    strings: ["Python and Django Developer.", "Backend enthusiast.", "Data-driven problem solver."],
+    startDelay: 2000, // starts after name
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+    cursorChar: '|'
+  });
+
   toggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
 

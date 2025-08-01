@@ -47,6 +47,15 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+.profile-photo {
+  width: 80%;              /* fill most of its column */
+  max-width: 300px;        /* looks big enough on desktop */
+  min-width: 150px;        /* keep reasonable on small screens */
+  height: auto;
+  box-shadow: 0 4px 12px var(--bcg-color);
+}
+
+
 h2 {
   font-weight: 600;
 }
@@ -69,6 +78,7 @@ section {
     font-weight: 500;
     font-size: 0.8rem;
     border-radius: 0;
+
 }
 
 .card {
@@ -196,3 +206,7 @@ section {
   padding: 10px 20px 10px 20px !important;    /*  top-right-bottom-left  */
 }
 
+#typed-desc {
+  font-weight: 600;
+  color: var(--bcg-color);
+}

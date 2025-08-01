@@ -13,18 +13,19 @@
       <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
         <img src="{% static 'images/profile.jpeg' %}" 
             alt="My Photo" 
-            class="rounded-circle img-fluid hover-glow" 
-            style="width: 300px; height: 300px;">
+            class="profile-photo rounded-circle img-fluid hover-glow animate__animated animate__rotateIn">
       </div>
         
       
       <!-- Text: Name, title, about -->
       <div class="col-12 col-md-8 text-center text-md-start">
-        <h1 class="mb-2">Hello, I'm Rushikesh
+        <h1 class="mb-2">
+          <span id="typed-name"></span>
           <i class="fa-solid fa-code fa-flip"></i>
         </h1>
-        <p class="lead mb-3">Python & Django Developer passionate about backend and data-driven solutions.</p>
-        <p>I have 1.5 years of IT operations experience at TCS and currently building my skills in full-stack web development.</p>
+        <p class="lead mb-3">
+          <strong><span id="fixed-desc"></span></strong> <span id="typed-desc"></span>
+        </p>
         
         <!-- Optional: Buttons -->
         <a href="{% static 'files/resume.pdf' %}" class="btn me-2 hover-glow" Download>

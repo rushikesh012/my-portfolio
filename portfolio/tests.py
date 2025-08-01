@@ -5,7 +5,7 @@ from django.urls import reverse
 
 class SimpleViewTests(TestCase):
     def test_home_view_status_code(self):
-        url = reverse('home')  # replace 'home' with your actual URL name
+        url = reverse('home')                  # replace 'home' with your actual URL name
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
 
